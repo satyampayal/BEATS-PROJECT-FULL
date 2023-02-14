@@ -1,0 +1,416 @@
+*{
+    margin: 0;
+    padding: 0;
+background-color:black;    
+color: #fff;
+}
+
+header{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-evenly;
+
+}
+
+header .logo{
+    height: 100%;
+    position: relative;
+    right: 30px;
+    cursor: pointer;
+}
+header .nav-in-img {
+    height: 80vh;
+    position: relative;
+}
+
+header .nav-in-img img{
+    width: 100%;
+    height: 100%;
+    position:relative;
+    top: -20%;
+
+}
+
+header .menu{
+    display: flex;
+    list-style: none;
+    height: 100%;
+    position: relative;
+    left: -100px;
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+.menu li{
+    margin: 20px;
+
+}
+
+.menu li a:hover{
+    border-bottom: 3px solid rgb(104, 5, 5);
+    border-radius: 2px;
+
+}
+
+.shop-btn{
+    border-top: 1px solid #fff;
+    border-left:1px solid #fff;
+    border-radius: 10px;
+    height:100%;
+}
+
+.shop-btn button{
+    margin: 10px ;
+
+}
+
+.shop-btn button span{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+.shop-btn:hover{
+    animation: btn 5s 1;
+}
+
+@keyframes btn{
+    20%,40%{
+        border-right: 1px solid #fff;
+    }
+    100%{
+        border-right: 1px solid #fff;
+
+        border-bottom: 1px solid #fff;
+
+    }
+}
+
+/* home start */
+
+.home{
+    position:absolute;
+    top: 100px;
+    right: 200px;
+
+}
+
+.onear-img{
+    position: relative;
+    left: 100px;
+
+}
+.home h1{
+    font-weight: 500;
+    font-size: 5em;
+    margin-bottom: 20px;
+}
+
+.home h2{
+    font-weight: 500;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.home p{
+    line-height: 30px;
+}
+
+.home .bag-tag{
+    margin-top: 20px;
+    background: #1e1e21;
+    border-radius: 10px ;
+    width: 300px;
+    position: relative;
+    
+}
+.home .bag-tag img,p,span{
+    background-color: transparent;
+    
+    cursor: pointer;
+
+}
+
+.bag-tag img{
+    margin: 20px;
+}
+
+.home .bag-tag p{
+ position:absolute;
+  top: 20px;
+  left: 58px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #bdc0c2;
+
+}
+
+.home .bag-tag p span{
+    position: relative;
+    left: 10px;
+    color: #bdc0c2;
+
+}
+
+.home-end ul{
+    display: flex;
+     margin-left: 300px;
+    list-style: none;
+}
+
+.home-end ul li{
+    margin:50px;
+}
+.home-end ul li a img{
+    width: 80px;
+}
+
+
+/* slide 1*/
+.slide-1,.slide-2{
+  display: grid;
+  grid-template-rows:  0.2fr 1fr;
+  justify-content: center;
+  row-gap: 10px;
+    
+}
+
+.slide-1 .slide-1-head,.slide-2-head{
+    justify-self: center;
+    margin: 20px;
+}
+
+.prod-1,.prod-2{
+    display: flex;
+
+}
+
+.prod-1 ul{
+    list-style: none;
+    margin-right: 100px;
+}
+.prod-1 ul li{
+    margin-bottom: 10px;
+}
+
+.prod-1 ul li h5 span{
+    margin-top: 5px;
+    font-size: 10px;
+}
+.prod-1 ul li:nth-child(1){
+  margin-left: 40px;
+}
+.prod-1 ul li:nth-child(4){
+  margin-left: 40px;
+}
+
+
+/*  slide-2*/
+.dec-prod-2{
+    margin-left: 100px;
+    
+}
+
+.dec-prod-2 p{
+    margin-top: 30%;
+    margin-bottom: 10%;
+    font-weight: 500;
+    font-size: 18px;
+
+
+}
+
+.dec-prod-2 button{
+    background: #1e1e21;
+    width: 50%;
+    margin-left: 30%;
+    border-radius: 10px ;
+    cursor: pointer;
+}
+.dec-prod-2 button img{
+    margin: 10px;
+    background: transparent;
+}
+.dec-prod-2 button span {
+    font-size: 18px ;
+    font-weight: 500;
+    display: inline-block;
+    position: relative;
+    bottom: 10px;
+    color: #bdc0c2;
+
+}
+
+/* slide 3 */
+.slide-3{
+    margin-top: 20%;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin-left: 10%;
+    background: #1e1e21;
+   border-radius: 10px ;
+}
+.dec-prod-3{
+    margin-right: 5%;
+    margin-top: 5%;
+    background: transparent;
+}
+.dec-prod-3 button{
+    border-radius:10px ;
+     background: transparent;
+
+
+}
+
+.dec-prod-3 p{
+    margin: 10px;
+    background: transparent;
+
+    
+}
+.dec-prod-3 button img{
+    padding: 10px;
+    background:transparent;
+
+}
+.slide-3 h2,.prod-3{
+    background: transparent;
+
+}
+
+.dec-prod-3 button span{
+      position: relative;
+      top: -10px;
+     color: #bdc0c2;
+
+ 
+
+}
+
+
+/*  slide 4 start  */
+
+.slide-4{
+    display: grid;
+    grid-row: 0.2fr 1fr;
+    justify-content: center;
+}
+.slide-4-head{
+    margin: 20%;
+    width: fit-content;
+    position: relative;
+    right: 80px;
+
+}
+
+.prod-4{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    
+}
+
+.prod-4-img{
+    width: 100px;
+    background-color: transparent;
+    position: relative;
+    bottom: 40px;
+
+ 
+}
+.pr1,.pr2,.pr3,
+.pr4,.pr5{
+
+    width:150px;
+    height: 170px;
+    margin-top:50px;
+    background: #1e1e21;
+    border-radius: 10px;
+}
+.prod-4 h3,p,img{
+    background-color: transparent;
+
+}
+
+.prod-4 p{
+    padding:5px 0 10px 10px;
+    position: relative;
+    top: -30px;
+}
+.prod-4 h3{
+    margin-left: 10px;
+    position: relative;
+    top: -30px;
+
+}
+.prod-4 .prod-4-bug{
+    margin-left: 40px;
+}
+
+/* slide-4-end */
+
+
+
+/* footer-start */
+
+footer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 10%;
+    
+
+}
+
+.logo-footer,.products,.support,.logo-sec{
+    margin: 10%;
+}
+
+.products ul,.support ul,
+.bottom-logo-sec ul{
+    list-style: none;
+    margin-top: 10%;
+
+}
+
+.products ul li,.support ul li{
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.top-logo-sec{
+    width:250px;
+    height: 50px;
+    background: #1e1e21;
+    border-radius:10px  ;
+    position: relative;
+}
+.top-logo-sec button{
+    position: absolute;
+    top: 3px ;
+    right: 8px;
+    border-radius:10px ;
+    width: 150px;
+    height: 40px;
+
+
+}
+
+.email{
+     color: #bdc0c2;
+     display: inline-block;
+     margin:10px ;
+}
+
+.bottom-logo-sec ul{ 
+    display: flex;
+
+}
+
+.bottom-logo-sec ul li{ 
+
+margin: 10px;
+
+}
+
